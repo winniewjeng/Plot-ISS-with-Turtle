@@ -60,3 +60,6 @@ location.write(time.ctime(over), font=style)
 
 screen.exitonclick()
 
+# https://codeclubprojects.org/en-GB/python/iss/
+# https://blog.trinket.io/using-images-in-turtle-programs/
+# http://interactivepython.org/runestone/static/IntroPythonTurtles/CreatingGeometricShapes/geomShapes.html
