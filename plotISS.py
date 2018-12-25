@@ -48,15 +48,15 @@ location.penup()
 location.goto(lon, lat)
 # location.hideturtle()
 
-screen.exitonclick()
-
 url = 'http://api.open-notify.org/iss-pass.json'
 url = url + '?lat=' + str(lat) + '&lon=' + str(lon)
 response = urllib.request.urlopen(url)
 result = json.loads(response.read())
 
 over = result['response'][1]['risetime']
-print(over)
-# style = ('Arial', 6)
-# location.write(time.ctime(over))
+style = ('Arial', 22)
+location.color("yellow")
+location.write(time.ctime(over), font=style)
+
+screen.exitonclick()
 
