@@ -26,34 +26,33 @@ print("logitude: ", lon)
 
 # convert file to .gif (50X50 px): https://www.online-convert.com/result/c63f1d0a-b9e4-4468-9a3a-bf556ae7dfae
 screen = turtle.Screen()
-screen.setup(540, 270)
-screen.bgpic("mapp.gif")
+screen.setup(2000, 2000)
+screen.bgpic("map.gif")
 screen.setworldcoordinates(-180, -90, 180, 90)
 
-screen.register_shape('meercaa.gif')
+screen.register_shape('iss.gif')
 iss = turtle
-iss.shape('meercaa.gif')
+iss.shape('iss.gif')
 iss.setheading(90)
 iss.penup()
 iss.goto(float(lon), float(lat))
 
-
-screen.exitonclick()
-
-# Pasadena, CA http://www.latlong.net/
-lat = 34.138
-lon = -118.125
-location = turtle
-# location.penup()
+# # Pasadena, CA http://www.latlong.net/
+# lat = 34.138
+# lon = -118.125
+# location = turtle
 # location.color('yellow')
 # location.goto(lon, lat)
-# location.dot(5)
+# location.dot(15)
+# location.penup()
 # location.hideturtle()
+#
+screen.exitonclick()
 
 # url = 'http://api.open-notify.org/iss-pass.json'
-url = url + '?lat=' + str(lat) + '&lon=' + str(lon)
-response = urllib.request.urlopen(url)
-result = json.loads(response.read())
+# url = url + '?lat=' + str(lat) + '&lon=' + str(lon)
+# response = urllib.request.urlopen(url)
+# result = json.loads(response.read())
 
 # over = result['response'][1]['risetime']
 # # print(over)
